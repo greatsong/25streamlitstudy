@@ -7,5 +7,5 @@ model = pipeline('sentiment-analysis')
 
 if text :
   result = model(text)
-  st.write('감정 : ", result[0]['label'])
-  st.write('점수 : ", result[0]['score'])
+  st.write('감정 : ', result[0]['label'])
+  st.write('점수 : ', result[0]['score'])
